@@ -17,3 +17,5 @@ function longest(s1, s2) {
     let arr = Array.from(uniqueStr);
     return arr.sort().join('')
 }
+
+const longest = (s1, s2) => [...new Set(s1+s2)].sort().join('')

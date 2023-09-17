@@ -11,3 +11,9 @@ function longest(s1, s2) {
 
     return uniqueChars.join('')
 }
+
+function longest(s1, s2) {
+    let uniqueStr = new Set(s1 + s2)
+    let arr = Array.from(uniqueStr);
+    return arr.sort().join('')
+}

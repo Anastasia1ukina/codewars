@@ -8,3 +8,7 @@ function friend(friends) {
     })
     return res
 }
+
+function friend(friends) {
+    return friends.filter(n => n.length === 4)
+}

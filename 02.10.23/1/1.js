@@ -1,9 +1,17 @@
 function isValidWalk(walk) {
-    let flag = false;
+    let northSouth = 0;
+    let eastWest = 0;
+
     for (let i = 0; i < walk.length; i++) {
-        if (walk.length === 10 && walk[i] !== walk[i + 1]) {
-            flag = true;
+        if (walk[i] === 's') {
+            northSouth++;
+        } else if (walk[i] === 'n') {
+            northSouth--;
+        } else if (walk[i] === 'w') {
+            eastWest++;
+        } else {
+            eastWest--;
         }
     }
-    return flag;
+    return walk.length === 10 && !northSouth && !eastWest
 }

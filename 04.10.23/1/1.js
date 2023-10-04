@@ -4,3 +4,5 @@ function removeSmallest(numbers) {
     res.splice(smallestValue, 1);
     return res;
 }
+
+const removeSmallest = numbers => numbers.filter((n,i) => i !== numbers.indexOf(Math.min(...numbers)));

@@ -4,3 +4,7 @@ function checkForFactor(base, factor) {
     }
     return false;
 }
+
+function checkForFactor(base, factor) {
+    return base % factor === 0;
+}

@@ -17,4 +17,8 @@ function comp(array1, array2) {
     return array1.map(v => v * v).sort((a, b) => a - b).every((v, i) => v == array2[i]);
 }
 
+function comp(a, b) {
+    return !!a && !!b && a.map(x => x * x).sort().join() == b.sort().join();
+}
+
 console.log(comp([2, 3], [4, 4]))

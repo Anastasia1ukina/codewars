@@ -18,4 +18,15 @@ function twoSum(numbers, target) {
     }
 }
 
-console.log(twoSum([2, 2, 3], 4))
+console.log(twoSum([11,2,7,15,5,4], 9))
+
+// var str = "Быть или не быть, вот в чём вопрос.";
+// var count = 0;
+// var pos = str.indexOf("в");
+
+// while (pos !== -1) {
+//     count++;
+//     pos = str.indexOf("в", pos + 1);
+// }
+
+// console.log(count);

@@ -13,3 +13,5 @@ function reverse(str) {
     res = strArr.join(' ')
     return res;
 }
+
+console.log(reverse('fuck i love you'))

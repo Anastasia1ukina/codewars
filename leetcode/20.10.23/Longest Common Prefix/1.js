@@ -1,4 +1,4 @@
-var longestCommonPrefix = function (strs) {
+function longestCommonPrefix (strs) {
     strs.sort()
     let first = strs[0]
     let last = strs[strs.length - 1]
@@ -16,3 +16,5 @@ var longestCommonPrefix = function (strs) {
     }
     return ans
 };
+
+console.log(longestCommonPrefix(["cadog","carrace","car"]))

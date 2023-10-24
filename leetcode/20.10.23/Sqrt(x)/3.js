@@ -1,4 +1,4 @@
-var mySqrt = function (x) {
+function mySqrt(x) {
     let left = 0;
     let right = x;
 
@@ -14,3 +14,5 @@ var mySqrt = function (x) {
     }
     return right;
 };
+
+console.log(mySqrt(2))
